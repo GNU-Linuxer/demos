@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joel Ross">
+    <title>Accessibility Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Web Page</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>This web page contains some generic content, for use in showing off a screen reader.</p>
+            <p>It contains <em>emphasized text</em>, as well as <a href="https://ischool.uw.edu/">links to other pages</a>.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nam. Odio ullam eveniet libero aliquam incidunt atque corporis vero deserunt.</p>
+        </section>
+        <section>
+        <h2>An image</h2>
+        <p>
+        <img 
+            src="https://i.pinimg.com/originals/d2/b1/d8/d2b1d8fa4e4ba4ad90cfeb1214af1479.jpg"
+            alt="a cute tiny puppy"
+            ></p>
+        <p><a href="https://www.google.com/search?q=puppies&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjIxa3_rsboAhW0MX0KHbA3A1UQ_AUoAXoECBkQAw&biw=1415&bih=749">Find more images!</a></p>
+    </section>
+
+    <section>
+        <p>
+            <button>Click me!</button>
+            <button aria-label="search"><img src="search.png"></button>
+            <span class="button" role="button">Not a real button</span>
+        </p>
+    </section>
+
+    <section>
+        <h2>The List</h2>
+        <p>What do we need to be worried about?</p>
+        
+        <ul>
+            <li>Lions</li>
+            <li>Tigers</li>
+            <li>
+                Bears
+                <ul>
+                    <li>Black</li>
+                    <li>Brown</li>
+                    <li>Polar</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <p>That's the end of the web page! <a href="#">click here to go back to the top.</a></p>
+    </main>
+
+</body>
+</html>
