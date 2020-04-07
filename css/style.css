@@ -1,0 +1,22 @@
+.text {
+  font-size: 1em;
+}
+
+h1 {
+  display: block;
+}
+
+p {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  /* font-size: 1.5rem; */
+  margin-bottom: 2em;
+}
+
+li {
+  display: inline-block;
+  width: 100px;
+  /* border: 3px solid rebeccapurple; */
+  padding: 1em 2em;
+  background-color: orange;
+  margin: 0 1em;
+}
