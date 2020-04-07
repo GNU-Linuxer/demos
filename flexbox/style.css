@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Each div in the "boxes" section */
+.boxes div {
+  padding: .5em;
+  background-color: orange;
+  border: 2px solid rebeccapurple;
+  margin-bottom: .5em;
+}
+
+img {
+  width: 300px;
+}
+
+/* images section */
+.images {
+  margin: 1em 0;
+}
