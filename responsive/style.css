@@ -2,12 +2,23 @@
   box-sizing: border-box;
 }
 
+
+/* default */
+body {
+  background-color: #eee;
+}
+
+
 /* the image section itself */
 /* contains 1 "column" of content */
 .images {
   display: flex;
   justify-content: space-around;
 }
+
+/* img {
+  display: none;
+} */
 
 /* the text citation */
 .images p {
@@ -37,4 +48,43 @@
 img {
   width: 300px;
 }
+
+/* if width >= 768px */
+@media (min-width: 768px) {
+
+  body {
+    background-color: lightblue;
+  }
+
+  .card {
+    background-color: white;
+  }
+
+  .images p {
+    order: 1000;
+  }
+
+  img {
+    display: inline;
+  }
+
+  .flex-pool {
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: lightgoldenrodyellow;
+  }
+
+  img {
+    width: 600px;
+  }
+
+}
+
 
