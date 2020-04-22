@@ -6,52 +6,61 @@
     <!-- remember to set the viewport! -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <title>Bootstrap Demo</title>
 </head>
 
 <body>
-    <header>
+    <header class="text-light bg-dark p-3 p-md-5 mb-3">
         <h1>Bootstrap Demo</h1>
-        <p>Building on the shoulders of giants</p>
+        <p class="text-center d-none d-md-block">Building on the shoulders of giants</p>
         <div>
-            <a href="http://getbootstrap.com/">Get Bootstrap</a>
+            <a class="btn btn-light" href="http://getbootstrap.com/">Get Bootstrap</a>
         </div>
     </header>
 
-    <main>
+    <main class="container">
         <section>
-            <form>
-                <label for="nameInput">What is your name?</label>
-                <input id="nameInput">
-                <label for="questInput">What is your quest?</label>
-                <input id="questInput">
-                <button type="button">Ponder</button>
+            <form id="form" class="collapse mb-2">
+                <div class="form-group">
+                    <label for="nameInput">What is your name?</label>
+                    <input class="form-control" id="nameInput">
+                </div>
+                <div class="form-group">
+                    <label for="questInput">What is your quest?</label>
+                    <input class="form-control" id="questInput">
+                </div>
+                <button type="button" class="btn btn-primary">Ponder</button>
             </form>
-            <button>Toggle Form</button>
+            <button class="btn btn-success" data-toggle="collapse" data-target="#form">Toggle Form</button>
         </section>
 
-        <section>
-            <div>
+        <section class="row">
+            <div class="col-12 col-md-6 col-xl-3">
                 <h2>Thing A</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, est!</p>
             </div>
-            <div>
+            <div class="col-12 col-md-6 col-xl-3">
                 <h2>Thing B</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum repudiandae tempore nobis?</p>
             </div>
-            <div>
+            <div class="col-12 col-md-6 col-xl-3">
                 <h2>Thing C</h2>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <div>
+            <div class="col-12 col-md-6 col-xl-3">
                 <h2>Thing D</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div>
+            <div class="col-12 col-md-6 col-xl-12">
                 <h2>Thing E</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, illum?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, illum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis obcaecati fuga sequi ipsa tempore eos id consequuntur, pariatur nobis sed amet, explicabo neque cumque qui autem aut? Error, voluptas consequuntur.</p>
             </div>
         </section>
 
