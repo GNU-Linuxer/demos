@@ -3,6 +3,10 @@ h2 {
 	margin-bottom: 0;
 }
 
+section, header {
+	margin-bottom: 2em;
+}
+
 .card {
 	margin-bottom: 1em;
 }
