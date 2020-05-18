@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
+import 'whatwg-fetch'; //make sure we're able to fetch
+
 import App from './components/App';
 
 //the "data"
@@ -14,4 +16,5 @@ const SAMPLE_TASKS = [
 ];
 
 //pass data in as a prop!
-ReactDOM.render(<App tasks={SAMPLE_TASKS} />, document.getElementById('root'));
+ReactDOM.render(<App tasks={SAMPLE_TASKS} />, 
+  document.getElementById('root'));
